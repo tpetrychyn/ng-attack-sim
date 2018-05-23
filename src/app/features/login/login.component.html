@@ -1,0 +1,9 @@
+<div>
+  <div *ngIf="loginLevel === 0">
+      <button (click)="createLogin()">Create login page (Cost: {{loginCost}})</button>
+  </div>
+  <div *ngIf="loginLevel > 0">
+      <button (click)="createLogin()">Upgrade login page (Cost: {{loginCost}})</button>
+      <p>Login level: {{loginLevel}}</p>
+  </div>
+</div>
